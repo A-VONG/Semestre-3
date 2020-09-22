@@ -2,6 +2,9 @@ package Jardin;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Scanner;
+
+import Flore.Ail;
 
 public class Jardin {
 	
@@ -49,15 +52,22 @@ public class Jardin {
 	public void ajouterPanier(String name, int quantite) {
 		this.panier.put(name, quantite);
 	}
+	
+
 
 	@Override
 	public String toString() {
 		String contenue = new String();
 
 		for (int i = 0; i < longueur; i++) {
-			contenue = contenue +"o";
+			
 			for (int k = 0; k < largeur; k++) {
-				contenue = contenue +"o";
+				if(emplacements[i][k] == null) {
+					contenue = contenue + "o";
+				}
+				else {
+					contenue = contenue + emplacements[i][k].toString();
+				}
 			}
 			contenue = contenue +"\n";
 		}
@@ -67,6 +77,15 @@ public class Jardin {
         }
 		
 		return contenue;
+	}	
+	
+	public void semer() {
+		Scanner scanner = new Scanner(System.in); 
+		int longueur = scanner.nextInt();
+		int largeur = scanner.nextInt();
+		int vege = scanner.nextInt();
+		
+		emplacements[longueur][largeur] = new Emplacement(new Ail());
 	}
 	
 }
