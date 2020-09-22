@@ -1,4 +1,4 @@
-package Flore;
+package Flore; 
 
 public class Carottes extends Vegetal{
 	public Carottes() {

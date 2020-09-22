@@ -1,4 +1,4 @@
-package Jardin;
+package Jardin;  
 
 public enum Etat {
 

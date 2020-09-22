@@ -33,7 +33,7 @@ public class Terre {
         		System.out.println("Tu as choisie le 1");
         		System.out.println("Choisisez la longueur puis la largeur du jardin");
         		monJardin.semer();
-        		System.out.println(monJardin);
+        		System.out.println(monJardin); 
           	break;
         	
         	case 2:

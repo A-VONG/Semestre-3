@@ -17,7 +17,7 @@ public abstract class Vegetal {
 		dessins[2] = '|';
 		dessins[5] = '#';
 	}
-	
+	 
 	public String toString() {
 		return String.valueOf(dessins[this.etat.ordinal()]);
 	}

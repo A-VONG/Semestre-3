@@ -1,6 +1,6 @@
 package Jardin;
 
-import java.util.Map;
+import java.util.Map; 
 
 import Flore.Ail;
 import Flore.Vegetal;

@@ -79,7 +79,7 @@ public class Jardin {
 		return contenue;
 	}	
 	
-	public void semer() {
+	public void semer() { 
 		Scanner scanner = new Scanner(System.in); 
 		int longueur = scanner.nextInt();
 		int largeur = scanner.nextInt();

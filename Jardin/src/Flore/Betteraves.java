@@ -1,5 +1,5 @@
 package Flore;
-
+ 
 public class Betteraves extends Vegetal {
 	public Betteraves() {
 		super();
